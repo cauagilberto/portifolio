@@ -43,7 +43,7 @@ header nav ul li a{
 section{
     padding: 20px;
     margin: 10px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*cria como se fosse uma caixa sombreada*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /*cria como se fosse uma caixa sombreada*/
     border-radius: 10px;
 }
 
@@ -84,4 +84,35 @@ footer a{
 footer a:hover{
     text-decoration: underline;
     color: lightblue;
+}
+
+.direitos{
+    font-size: 14px;
+    color: lightblue;
+    margin-bottom: 10px;
+}
+
+#anti-copia{
+    font-size: 18px;
+    user-select: none; /*impede que o texto seja selecionado*/
+}
+
+h2:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color: lightseagreen;
+}
+
+#project-link:hover{
+    display: inline-block;
+    padding: 2px 3px;
+    background-color: lightblue;
+    color: #10001f;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: plum;
+    text-decoration: underline;
 }
