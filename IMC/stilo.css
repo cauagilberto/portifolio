@@ -1,0 +1,57 @@
+*{
+    background-color: lightgreen;
+    text-align: center;
+    text-align: top;
+    text-align: bottom;
+    
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+form{
+    background-color: wheat;
+    box-shadow: 0px 0px 10px black;
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    background-color: wheat;
+}
+
+input{
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+button{
+    background-color:rgb(123, 182, 192);
+    color: black;
+    border: bold;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+button:hover{
+    background-color: rgb(77, 114, 121);
+    color: white;
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
+    color: black;
+    box-sizing: border-box;
+    background-color: wheat;
+}
