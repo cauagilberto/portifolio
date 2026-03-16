@@ -18,7 +18,9 @@ const duracao = document.getElementById('duracao').value;
 const horas = Math.floor(duracao / 60);
 const minutos = duracao - horas * 60;
 
-document.getElementById('tituloFilme').textContent = `O filme ${titulo}`;
-document.getElementById('duracaoHoras').textContent = `tem ${horas} horas e ${minutos} minutos`;
+/*document.getElementById('tituloFilme').textContent = `O filme ${titulo}`;
+document.getElementById('duracaoHoras').textContent = `tem ${horas} horas e ${minutos} minutos`;*/
+
+document.getElementById('tituloFilme').textContent = `O filme ${titulo} tem ${horas} horas e ${minutos} minutos`;
 
 }
