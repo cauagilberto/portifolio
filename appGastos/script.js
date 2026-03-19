@@ -1,10 +1,10 @@
 
 
 const matrizGastos = [
-    ["Alimentação", 0]
-    ["Transporte", 0]
-    ["Moradia", 0]
-    ["Lazer", 0]
+    ["Alimentação", 0],
+    ["Transporte", 0],
+    ["Moradia", 0],
+    ["Lazer", 0],
     ["Total", 0]
 ]
 
@@ -23,7 +23,7 @@ const obterCategoriaInformada= () => obterElemento('categoria').value;
 const obterCategoria = (matriz, nomeCategoria, ) => matriz.find((item) => item[0] == nomeCategoria);
 
 //atualizar valor na matriz
-const atualizarValorCategoria = (categoria, valor) => categoria[1] += somaValores(categoria[1], valor);
+const atualizarValorCategoria = (categoria, valor) => categoria[1] = somaValores(categoria[1], valor);
 
 const atualizarInterface = () => {
     matrizGastos.forEach(([nome, valor]) => {
@@ -35,8 +35,6 @@ const atualizarInterface = () => {
 
 
 function adicionarGasto() {
-   
-    //1. pegar o valor informado
     const valorInformado = obterValor();
     //2. pegar a categoria informada
     const categoriaInformada = obterCategoriaInformada();
@@ -46,16 +44,11 @@ function adicionarGasto() {
         alert('Valor não pode ser negativo');
         return;
     }
-        
-    //4. de acordo com a categoria, atualiza o valor
-    const categoria = obterCategoria(matrizGastos, categoriaInformada);
-    atualizarValorCategoria(categoria, valorInformado);
-    //4.1 atualizar interface
-    const total = obterCategoria(matrizGastos, 'Total');
-    atualizarValorCategoria(total, valorInformado);
-    //5. atualizar interface do total gasto
-    atualizarInterface();
-    //6. limpar campos
-    limparCampos();
 
+    const categoria = obterCategoria(matrizGastos, categoriaInformada);
+    const total = obterCategoria(matrizGastos, 'Total');
+    atualizarValorCategoria(categoria, valorInformado);
+    atualizarValorCategoria(total, valorInformado);
+    atualizarInterface();
+    limparCampos();
 }
