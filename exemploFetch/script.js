@@ -11,7 +11,7 @@ document.getElementById("cep").addEventListener("blur", (event)=> {
     fetch(`https://viacep.com.br/ws/${cepInformado}/json/`)
         .then(response => response.json())
         .then(data => {
-            //preenchimento dos campos com os dados
+            //Preencher os campos do formulário com os dados retornados pela API
             if(!data.erro){
                 document.getElementById('logradouro').value = data.logradouro;
                 document.getElementById('bairro').value = data.bairro;
@@ -26,7 +26,4 @@ document.getElementById("cep").addEventListener("blur", (event)=> {
             console.error('Erro ao buscar o endereço:', error);
         });
 
-})
-
-//Preencher os campos do formulário com os dados retornados pela API
-
+});
