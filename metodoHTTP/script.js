@@ -10,7 +10,7 @@ fetch("https://crudcrud.com/api/472f20fad5e04b0f99ada92bac78a6a0/tarefas")
         //cria um elemento li para cada tarefa
         const item = document.createElement('li');
         //define o conteúdo do item com a descrição da tarefa e um botão de excluir
-        item.innerHTML = `${tarefa.descricao} <button>X</button>`;
+        item.innerHTML = `${tarefa.descricao} <button onclick="excluirTarefa('${tarefa._id}')">X</button>`;
         //adiciona novo item a lista
         tarefas.appendChild(item);
     });
@@ -35,9 +35,21 @@ document.getElementById('add').addEventListener('click', () => {
         //cria um elemento li para cada tarefa
         const item = document.createElement('li');
         //define o conteúdo do item com a descrição da tarefa e um botão de excluir
-        item.innerHTML = `${tarefa.descricao} <button>X</button>`;
+        item.innerHTML = `${tarefa.descricao} <button onclick="excluirTarefa('${tarefa._id}')">X</button>`;
         //adiciona novo item a lista
         tarefas.appendChild(item);
-    })
+    });
 
-})
+});
+
+function excluirTarefa(id) {
+    //faz um DELETE para a API para excluir a tarefa com o ID fornecido
+    fetch(`https://crudcrud.com/api/472f20fad5e04b0f99ada92bac78a6a0/tarefas/${id}`, {
+        method: "DELETE"
+    })
+    .then(() => {
+        //remove o item da lista do DOM
+        const item = document.querySelector(`button[onclick="excluirTarefa('${id}')"]`).parentElement;
+        item.remove();
+    });
+}
