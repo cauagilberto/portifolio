@@ -16,3 +16,25 @@
     - `sizes = "(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"`
 
 
+**flexbox** - usado para alinhamento vertical e horizontalmente
+- `display: flex` -> no elemento pai dos elementos que vão se tornar boxes
+- `flex-direction: row` -> indica que vai alinhar os elementos filhos na horizontal
+- `flex-direction: column` -> indica que vai alinhar os elementos filhos na vertical
+- `flex-direction: row-reverse` -> inverte a ordem dos itens na horizontal
+- `flex-direction: column-reverse` -> inverte as ordens dos itens na vertical
+
+**`justify-content`** - quando usamos `row` ou `row-reverse`
+- `flex-start`: alinha à esquerda
+- `flex-end`: alinha à direita
+- `center`: centraliza os itens
+- `space-between`: distribui os itens com espaço entre eles
+- `space-around`: distribui os itens com espaço ao redor
+
+**`align-itens`** - quando usamos `column` ou `column-reverse`
+- `stretch`: preenche o container
+- `flex-start`: alinha os itens no topo
+- `flex-end`: alinha os itens na base
+- `center`: centraliza os itens
+
+**`gap`**
+- permite criar um espaçamento entre os itens sem precisar da `margin`
