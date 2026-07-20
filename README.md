@@ -38,3 +38,20 @@
 
 **`gap`**
 - permite criar um espaçamento entre os itens sem precisar da `margin`
+
+**css grid**
+- sistema bidimensional que permite criar uma interface com colunas e linhas ao mesmo tempo
+- isso difere dos outros metodos que não permitem os dois ao mesmo tempo
+
+`. container {`
+`    display: grid;`
+`    grid-template-columns: 200px 200px 200px;`
+`    grid-template-rows: 100px 100px;`
+`}`
+
+- podemos usar frações para distribuir o espaço
+    - `grid-template-columns: 1fr 2fr 1fr;`
+- para inserir elementos podemos usar o `grid-column` e `grid-row`
+- podemos definir anteriormente a estrutura do grid e posicionar elementos nomeando as áreas e atribuindo os elementos a cada uma usando o `grid-template-areas`
+    - `grid-template-areas: "header header header header" "sidebar main main aside" "footer footer footer footer"`
+
