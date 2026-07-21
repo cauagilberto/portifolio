@@ -65,3 +65,8 @@
         - acessar o site oficial do bootstrap
         - inserir o link do CSS na tag <head>
         - inserir o script de JS na tag </body>
+- *grid system*: divide a tela em 12 colunas, adapta automaticamente o conteúdo para diferentes tamanho de telas (mobile-first) e facilita a criação de layouts em colunas e linhas
+    - container: define área centralizada e com margem laterais
+    - row: define uma linha para agrupar colunas
+    - col: define o conteúdo em colunas
+- componentes pré-construídos no bootstrap: uma biblioteca imensa na documentação disponível no bootstrap
