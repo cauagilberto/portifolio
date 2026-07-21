@@ -55,3 +55,13 @@
 - podemos definir anteriormente a estrutura do grid e posicionar elementos nomeando as áreas e atribuindo os elementos a cada uma usando o `grid-template-areas`
     - `grid-template-areas: "header header header header" "sidebar main main aside" "footer footer footer footer"`
 
+**bootstrap**
+- framework para deixar os layouts mais responsivos e personalizáveis ainda mais rapido
+- uma biblioteca de CSS + JS 
+- exemplo de aplicação:
+    - `<button class="btn btn-primary">Clique Aqui</button>`
+- como usar:
+    - uso de cdn: linkar os arquivos de bootstrap hospedados em um CDN (content delivery network)
+        - acessar o site oficial do bootstrap
+        - inserir o link do CSS na tag <head>
+        - inserir o script de JS na tag </body>
