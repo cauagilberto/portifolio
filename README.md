@@ -70,3 +70,13 @@
     - row: define uma linha para agrupar colunas
     - col: define o conteúdo em colunas
 - componentes pré-construídos no bootstrap: uma biblioteca imensa na documentação disponível no bootstrap
+
+**SASS**
+- Estruturar os estilos para reutilização de código, organização e manutenção facilitada.
+- Pré-processador CSS que adiciona recursos avançados ao CSS tradicional, deixando o código mais eficiente e modular
+    - adiciona recursos, do CSS no SASS, avançados antes que ele seja processado no código
+- instale as dependencias:
+    - node.js - atraves do site deles
+        - pelo linux foi usando fnm com yarn
+    - sass - `npm install -g sass`
+    
