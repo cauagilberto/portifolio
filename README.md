@@ -79,4 +79,21 @@
     - node.js - atraves do site deles
         - pelo linux foi usando fnm com yarn
     - sass - `npm install -g sass`
-    
+
+*Variaveis e aninhamento*
+- variavel = um identificador que armazena um valor que pode ser reutilizado em várias partes do código
+    - exemplo: `$cor primaria: #ff6600;`
+        - as variáveis sem começam com "$"
+- aninhamento = podemos aninhar os estilos de forma hierárquica, aninhando os elementos filho dentro do elemento pai
+    - exemplo: 
+    ```.container {
+            background: #f4f4f4;
+            padding: 20px;
+            h1 {
+                color: #333;
+            }
+            p {
+            font-size: 18px;
+            }
+        }
+``` 
