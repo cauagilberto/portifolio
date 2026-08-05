@@ -86,14 +86,15 @@
         - as variáveis sem começam com "$"
 - aninhamento = podemos aninhar os estilos de forma hierárquica, aninhando os elementos filho dentro do elemento pai
     - exemplo: 
-    ```.container {
-            background: #f4f4f4;
-            padding: 20px;
-            h1 {
-                color: #333;
-            }
-            p {
-            font-size: 18px;
-            }
+    ```
+    .container {
+        background: #f4f4f4;
+        padding: 20px;
+        h1 {
+            color: #333;
         }
+        p {
+            font-size: 18px;
+        }
+    }
 ``` 
