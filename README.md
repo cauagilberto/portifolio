@@ -2,7 +2,7 @@
 
 # anotações da aula
 
-- `<meta name="viewport" content="width=device-width, inital-scale=1.0">`
+- ```<meta name="viewport" content="width=device-width, inital-scale=1.0">```
     - o navegador ajusta o tamanho do conteúdo da página de acordo com o tamanho da tela do dispositivo
 
 - % = usado baseado no tamanho do elemento pai
@@ -11,9 +11,9 @@
 - vw/vh = baseado na largura/altura da tela (uma unidade é igual a 1% da altura/largura da tela)
 
 - srcset = conseguimos definir diferentes tamanho para uma imagem (se o mecanismo não for suportado pelo navegador usamos `src`)
-    - `srcset = "imagem-pequena.jpg 600w, imagem-media.jpg 1200w, imagem-grande.jpg 1800w"`
+    - ```srcset = "imagem-pequena.jpg 600w, imagem-media.jpg 1200w, imagem-grande.jpg 1800w"```
 - sizes = define o quanto de espaço o tamanho da imagem definida anteriormente pode ocupar da tela do dispositivo
-    - `sizes = "(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"`
+    - ```sizes = "(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"```
 
 
 **flexbox** - usado para alinhamento vertical e horizontalmente
@@ -43,23 +43,25 @@
 - sistema bidimensional que permite criar uma interface com colunas e linhas ao mesmo tempo
 - isso difere dos outros metodos que não permitem os dois ao mesmo tempo
 
-`. container {`
-`    display: grid;`
-`    grid-template-columns: 200px 200px 200px;`
-`    grid-template-rows: 100px 100px;`
-`}`
+```
+. container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+}
+```
 
 - podemos usar frações para distribuir o espaço
-    - `grid-template-columns: 1fr 2fr 1fr;`
+    -  ```grid-template-columns: 1fr 2fr 1fr;```
 - para inserir elementos podemos usar o `grid-column` e `grid-row`
 - podemos definir anteriormente a estrutura do grid e posicionar elementos nomeando as áreas e atribuindo os elementos a cada uma usando o `grid-template-areas`
-    - `grid-template-areas: "header header header header" "sidebar main main aside" "footer footer footer footer"`
+    - ```grid-template-areas: "header header header header" "sidebar main main aside" "footer footer footer footer"```
 
 **bootstrap**
 - framework para deixar os layouts mais responsivos e personalizáveis ainda mais rapido
 - uma biblioteca de CSS + JS 
 - exemplo de aplicação:
-    - `<button class="btn btn-primary">Clique Aqui</button>`
+    - ```<button class="btn btn-primary">Clique Aqui</button>```
 - como usar:
     - uso de cdn: linkar os arquivos de bootstrap hospedados em um CDN (content delivery network)
         - acessar o site oficial do bootstrap
@@ -78,11 +80,11 @@
 - instale as dependencias:
     - node.js - atraves do site deles
         - pelo linux foi usando fnm com yarn
-    - sass - `npm install -g sass`
+    - sass - ```npm install -g sass```
 
 *Variaveis e aninhamento*
 - variavel = um identificador que armazena um valor que pode ser reutilizado em várias partes do código
-    - exemplo: `$cor primaria: #ff6600;`
+    - exemplo: ```$cor primaria: #ff6600;```
         - as variáveis sem começam com "$"
 - aninhamento = podemos aninhar os estilos de forma hierárquica, aninhando os elementos filho dentro do elemento pai
     - exemplo: 
