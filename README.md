@@ -82,21 +82,37 @@
         - pelo linux foi usando fnm com yarn
     - sass - ```npm install -g sass```
 
-*Variaveis e aninhamento*
-- variavel = um identificador que armazena um valor que pode ser reutilizado em várias partes do código
-    - exemplo: ```$cor primaria: #ff6600;```
-        - as variáveis sem começam com "$"
-- aninhamento = podemos aninhar os estilos de forma hierárquica, aninhando os elementos filho dentro do elemento pai
-    - exemplo: 
+    *Variaveis e aninhamento*
+    - variavel = um identificador que armazena um valor que pode ser reutilizado em várias partes do código
+        - exemplo: ```$cor primaria: #ff6600;```
+            - as variáveis sem começam com "$"
+    - aninhamento = podemos aninhar os estilos de forma hierárquica, aninhando os elementos filho dentro do elemento pai
+        - exemplo: 
+        ```
+        .container {
+            background: #f4f4f4;
+            padding: 20px;
+            h1 {
+                color: #333;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        ``` 
+        - operador &= simplifica a criação de seletores aninhados, referencia diretamente o bloco pai
+    *Partial e Modules*
+    - Divisão do código CSS em pequenas partes para facil manutenção e organização do projeto no geral
+    - arquivos SASS com pedaços do código que não são compilados diretamente em CSS
+    - no nome dos arquivos temos o **underline**: "_cores.scss", "_header.scss"
+    - `@use` para importar um arquivo e encapsula seu conteúdo:
     ```
-    .container {
-        background: #f4f4f4;
-        padding: 20px;
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-        }
+    @use 'variaveis';
+
+    body {
+        background: variaveis.$cor-primaria;
     }
-``` 
+    ```
+    - a variavel estaria dentro do arquivo "_variaveis.scss"
+    ![alt text](image.png)
+
