@@ -116,3 +116,50 @@
     - a variavel estaria dentro do arquivo "_variaveis.scss"
     ![alt text](image.png)
 
+**MIXINS, INHERITANCE E OPERATORS**
+- *Mixins*
+    - blocos de código reutilizáveis
+```
+@mixin borda-arredondada($raio: 5px){
+    border-radius: $raio;
+}
+
+.botao{
+    @include borda-arredondada;
+}
+
+.header{
+    @include borda-arredondada(40px);
+}
+```
+- *Inheritance*
+    - capacidade de um seletor herdar os estilos de outro seletor, usando o `@extend`
+    - evita duplicação de código
+    - compartilha regras no css final então os seletores podem ficar longos e complexos
+NO SCCS
+```
+.mensagem-base{
+    padding: 10px;
+    border-radius: 3px;
+}
+.mensagem-sucesso{
+    @extend .mensagem-base;
+    background-color: white;
+    color: black;
+}
+```
+NO CSS
+```
+.mensagem-base, .mensagem-sucesso{
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.mensagem-sucesso{
+    backgorund-color: white;
+    color: black;
+}
+```
+- *Operators*
+    - operdores aritméticos: + - * / %
+    - `@use "sass:math"`

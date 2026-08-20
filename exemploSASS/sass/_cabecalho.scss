@@ -1,4 +1,5 @@
 @use 'variaveis';
+@use 'mixins';
 
 .cabecalho {
     background: variaveis.$cor-primaria;
