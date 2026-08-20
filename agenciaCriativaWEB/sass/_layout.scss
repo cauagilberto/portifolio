@@ -1,0 +1,7 @@
+@use 'mixins';
+@use 'variaveis';
+
+.layout {
+    width: variaveis.$tamanho-metade;
+    align-self: variaveis.$alinhamento;
+}

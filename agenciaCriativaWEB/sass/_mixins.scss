@@ -1,0 +1,6 @@
+@use 'mixins';
+@use 'variaveis';
+
+@mixin espacamento{
+    padding: variaveis.$espacamento
+}

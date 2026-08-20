@@ -1,0 +1,13 @@
+@use 'variaveis';
+@use 'mixins';
+
+h1 {
+    text-align: variaveis.$alinhamento;
+}
+h2 {
+    text-align: variaveis.$alinhamento;
+}
+p {
+    text-align: variaveis.$alinhamento;
+}
+
