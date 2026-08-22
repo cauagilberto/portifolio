@@ -172,3 +172,14 @@ NO CSS
 - bg = background, text = formatação do texto, mt = margem top, font = estilização da fonte
 - todas as características e formas de aplicar estão na documentação do tailwind css
     - com exemplos fixos de estilos, mas demonstrando oq as modificações afetam no estilo
+
+- *configuração do tailwind no projeto*
+    - instalar tailwind via NPM
+        - `npm install tailwindcss @tailwindcss/cli`
+    - criar o arquivo css principal e importar o tailwind css
+        - `@import "tailwindcss";`
+    - executar o CLI para escanear os arquivos de origem e criar o css final
+        - `npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch`
+    - adicione o arquivo css compilado ao head do HTML e utilize as classes 
+        - `<link href="./output.css" rel="stylesheet">`
+    
