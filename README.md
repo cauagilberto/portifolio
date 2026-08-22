@@ -163,3 +163,12 @@ NO CSS
 - *Operators*
     - operdores aritméticos: + - * / %
     - `@use "sass:math"`
+
+**Tailwind CSS**
+- framework de conjunto de classes utilitárias para aplicar os estilos diretamente no HTML
+- diferentemente do bootstrap, ele é totalmente estilizavel, ou seja, o desenvolvedor estiliza da forma que quiser
+- menos código css final 
+- padronização visual 
+- bg = background, text = formatação do texto, mt = margem top, font = estilização da fonte
+- todas as características e formas de aplicar estão na documentação do tailwind css
+    - com exemplos fixos de estilos, mas demonstrando oq as modificações afetam no estilo
