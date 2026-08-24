@@ -182,4 +182,14 @@ NO CSS
         - `npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch`
     - adicione o arquivo css compilado ao head do HTML e utilize as classes 
         - `<link href="./output.css" rel="stylesheet">`
-    
+
+- *classes de utlidade:*
+    - pequenas classes css para executar funções específicas
+    - aplicadas diretamente no HTML, garantindo facilidade, segurança, manutenibilidade
+    - m-4, mt-2, mx-4 - para margem
+    - p-6, py-4, px-2 - para padding
+    - bg-red-500, text-white, text-gray-800 - para cores
+    - text-lg, font-bold, uppercase - para os caracteres
+    - w-full, h-64 - para tamanho dos elementos
+    - border, border-gray-300, rounded - borda dos elementos
+    - flex, grid - para o formato de exibição e alinhamento
