@@ -193,3 +193,23 @@ NO CSS
     - w-full, h-64 - para tamanho dos elementos
     - border, border-gray-300, rounded - borda dos elementos
     - flex, grid - para o formato de exibição e alinhamento
+
+- *Responsividade no tailwind*
+    - breakpoints móveis que aplica os estilos diferentes em tamanho diferentes da tela
+        - usando as classes utilitárias aplicadas diretamente no HTML
+    - sem prefixo - será aplicada a todos os tamanhos (`sm`, `md`, entre outros)
+    - com prefixo - será aplicado a partir daquele breakpoint/tamanho específicado (`sm: (<=640px)`, `md: (<=768px)`)
+    ```
+    <div class="text-center md:text-left">
+        Alinhamento muda de centralizado para à esquerda em telas médias
+    </div>
+    ```
+    - **Mobile-first**
+        - o tailwind segue o mobile-first, ou seja, primeiro você define o estilos para pequenas telas
+        - a partir disso usa-se os prefixos, para modificar ou adicionar elementos nas telas maiores
+        ```
+        <button class="w-full md:w-auto px-4 py-2 bg-blue-500 text-white rounded">
+            Botão responsivo
+        </button>
+        ```
+        
