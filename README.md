@@ -232,3 +232,8 @@ NO CSS
 - *package-lock.json* - é gerado automaticamente após instalar o pacote, garante o uso das mesmas versões por todos, evita erros de atualizações inesperadas e é utilizado para realizar a instalação em outros ambientes
 
 - *scripts* - servem para automatizar comandos de terminal grandes, somente sendo necessário o `npm run build` para rodar todos os comandos sem precisar inserir manualmente
+
+- **Yarn** - gerenciador de pacotes modernos para projetos de JavaScript, como uma alternativa mais rápida e segura
+    - `npm install -g corepack` - para instalação do yarn
+    - `yarn init` ou `yarn init -y` - para iniciar o projeto
+    - `yarn add <pacote>` ou `yarn add -D <pacote>` - para adicionar como dependência ou desenvolvimento
