@@ -212,4 +212,23 @@ NO CSS
             Botão responsivo
         </button>
         ```
-        
+
+**NPM e Yarn**
+- *pacotes* = conjunto de arquivos de código reutilizável por meio de gerenciadores como o NPM e Yarn
+- *dependências* = pacotes necessários para que o projeto funcione gerenciados pelo package.json
+    - dependencies - pacotes usados diretamente na aplicação
+    - devDependencies - pacotes usados somente durante o desenvolvimento ou build, não serão carregados na produção
+    - package.json - arquivo que descreve as configurações dos projetos e dependências
+    - gerenciador de pacotes - automatiza a instalação, atualização, remoção e verificação das versões dos pacotes de dependências usados
+
+- **NPM** (Node Package Manager) = essencial para projetos modernos que utilizam node.js ou JavaScript 
+    - `npm init` - segue o passo a passo de instalação e preenchimento dos dados
+    - `npm init -y` - automatico sem necessidade do passo a passo
+    - `npm install <ferramenta>` - adiciona ao package.json como dependência de execução
+    - `npm install -D <ferramenta>` - adiciona ao package.json como dependência de desenvolvimento
+    - `npm update` - atualização dos pacotes
+    - `npm uninstall <ferramenta>` - desinstalação do pacote específico
+
+- *package-lock.json* - é gerado automaticamente após instalar o pacote, garante o uso das mesmas versões por todos, evita erros de atualizações inesperadas e é utilizado para realizar a instalação em outros ambientes
+
+- *scripts* - servem para automatizar comandos de terminal grandes, somente sendo necessário o `npm run build` para rodar todos os comandos sem precisar inserir manualmente
