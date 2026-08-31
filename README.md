@@ -237,3 +237,16 @@ NO CSS
     - `npm install -g corepack` - para instalação do yarn
     - `yarn init` ou `yarn init -y` - para iniciar o projeto
     - `yarn add <pacote>` ou `yarn add -D <pacote>` - para adicionar como dependência ou desenvolvimento
+
+**REACT**
+- biblioteca JavaScript usada para construir interfaces de usuários baseadas em componentes
+- por ser baseado em componentes, permite a reutilização, manutenção e organização do código
+- *componentes*:
+    - blocos de construção de uma aplicação
+    - cada componente é uma parte da UI que tem lógica e aparência única
+    - podem ser reutilizados em diferentes partes da aplicação
+    - melhora manutenibilidade e escalabilidade da aplicação
+- instalação: `npm create vite@<versão> <pasta do projeto> -- --template react`
+    - `cd <pasta do projeto>`
+    - `npm install`
+    - `npm run dev`
