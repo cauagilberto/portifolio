@@ -250,3 +250,12 @@ NO CSS
     - `cd <pasta do projeto>`
     - `npm install`
     - `npm run dev`
+- *JSX*
+    - extensão da sintaxe do javascript para ser usado com o React
+    - permite escrever HTML dentro de funções JavaScript
+    - produz "elementos" React
+        - `const elemento = <h1>Olá</h1>`
+    - qualquer expressão JavaScript dentro de "{}"
+    - uso de condicionais (operador ternário)
+    - renderizar listas
+    - proteção contra injeção de código (XSS)
