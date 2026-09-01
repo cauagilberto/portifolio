@@ -1,13 +1,12 @@
 import Tarefa from './components/Tarefa'
 
 function App() {
+    const tarefas = ["Estudar React", "Fazer compras", "Responder e-mails"]
     return (
         <main>
             <h1>To-Do List App</h1>
                 <ul>
-                    <Tarefa texto={"Estudar React"}/>
-                    <Tarefa texto={"Fazer compras"}/>
-                    <Tarefa texto={"Responder e-mails"}/>
+                    {tarefas.map(tarefa => <Tarefa texto={tarefa}/>)}
                 </ul>
         </main>
     )
