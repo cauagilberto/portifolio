@@ -259,3 +259,11 @@ NO CSS
     - uso de condicionais (operador ternário)
     - renderizar listas
     - proteção contra injeção de código (XSS)
+- *Props*
+    - propriedades passadas de um componente pai para um componente filho
+    - são somente feitas para leitura, não podem ser modificadas pelo filho
+    - dinamização e reutliização dos componentes
+    - são recebidos como argumento e atribuidos no JSX, semelhante ao HTML
+    - elementos podem ser props
+    - children: pode passar conteúdo diretamente entre tags do componente
+    
