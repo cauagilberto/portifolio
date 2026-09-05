@@ -266,4 +266,26 @@ NO CSS
     - são recebidos como argumento e atribuidos no JSX, semelhante ao HTML
     - elementos podem ser props
     - children: pode passar conteúdo diretamente entre tags do componente
+- *State*
+    - objeto interno que armazena informações que mudam ao longo do tempo
+    - somente quando o state muda que o React re-renderiza o visual da página
+    - useState: 
+        - hook usado para criar e manipular o state em componentes funcionais
+    ```
+    import {useState} from 'react';
+
+    function Contador(){
+        const[conatagem, setContagem] = useState(0);
+
+        return (
+            <>
+                <p> Você Clicou {contagem} vezes</p>
+                <button onClick={() => setContagem(contagem + 1)}>Clique aqui</button>
+            </>
+        );
+    }
+    ```
+    - sem usar a função de atualização (setState) para modificação, sem modificar diretamente
+    - por isso podemos usar vários states diferentes
+    - chave para a interatividade no React
     
