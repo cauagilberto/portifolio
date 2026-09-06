@@ -1,4 +1,4 @@
-import Tarefa from './components/Tarefa'
+import Tarefa from './components/Tarefa';
 
 function App() {
     const tarefas = [
